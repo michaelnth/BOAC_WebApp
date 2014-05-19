@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BOAC_WebApp1.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Business On A Cloud
+                </h1>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Account">
+                            <asp:MenuItem NavigateUrl="Account/AccountProfile.aspx" Text="Account Profile"/>
+                            <asp:MenuItem NavigateUrl="Account/AccountBalance.aspx" Text="Account Balance"/>
+                            <asp:MenuItem NavigateUrl="Account/ChangePass.aspx" Text="Change Password"/>
+                            <asp:MenuItem NavigateUrl="Account/SuspendActivate.aspx" Text="Suspend/Activate Card"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Voucher Management">
+                            <asp:MenuItem NavigateUrl="Voucher/DepositVoucher.aspx" Text="Deposit Voucher"/>
+                            <asp:MenuItem NavigateUrl="Voucher/IssueVoucher.aspx" Text="Issue Voucher"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Transactions">
+                            <asp:MenuItem NavigateUrl="Transactions/DisplayRecords.aspx" Text="Display Records"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Community">
+                            <asp:MenuItem NavigateUrl="Community/JoinDepart.aspx" Text="Join/Depart Community"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Referral">
+                            <asp:MenuItem NavigateUrl="Referral/ReferUserCommunity.aspx" Text="Refer a User to a Community"/>
+                            <asp:MenuItem NavigateUrl="Referral/ReferUserBusiness.aspx" Text="Refer a User to a Business"/>
+                            <asp:MenuItem NavigateUrl="Referral/ReferBusiness.aspx" Text="Recommend a Business"/>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -15,7 +15,7 @@
                 Card Status: 
             </td>
             <td>
-                ACTIVE/SUSPENDED
+                <asp:Label ID="State" runat="server" Text=""></asp:Label>
             </td>
         </tr>
     </table>
@@ -27,7 +27,9 @@
             If your card has been lost, you may suspend your card to prevent it from being used.
         </p>
         <div align="right">
-            <asp:Button ID="SuspendButton" runat="server" Text="Suspend"/>
+            <asp:ImageButton ID="SuspendImageBtn" runat="server" 
+                onclick="SuspendImageBtn_Click" Height="30px" 
+                ImageUrl="~/Icons/Suspend.png" ToolTip="Suspend" />
         </div>
     </fieldset>
     <fieldset>
@@ -36,7 +38,9 @@
             If your card is suspended and it has been reclaimed, you may re-activate your card.
         </p>
         <div align="right">
-            <asp:Button ID="ActivateButton" runat="server" Text="Activate"/>
+            <asp:ImageButton ID="ActivateImageBtn" runat="server" 
+                onclick="ActivateImageBtn_Click" Height="30px" 
+                ImageUrl="~/Icons/Activate.png" ToolTip="Activate" />
         </div>
     </fieldset>
 </asp:Content>

@@ -21,16 +21,16 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem Text="Account">
-                            <asp:MenuItem NavigateUrl="Account/AccountProfile.aspx" Text="Account Profile"/>
-                            <asp:MenuItem NavigateUrl="Account/AccountBalance.aspx" Text="Account Balance"/>
-                            <asp:MenuItem NavigateUrl="Account/ChangePass.aspx" Text="Change Password"/>
-                            <asp:MenuItem NavigateUrl="Account/SuspendActivate.aspx" Text="Suspend/Activate Card"/>
+                            <asp:MenuItem NavigateUrl="Account/AccountProfile.aspx" Text=" Account Profile" ImageUrl="Icons/Edit_20.png" />
+                            <asp:MenuItem NavigateUrl="Account/AccountBalance.aspx" Text=" Account Balance" ImageUrl="Icons/BalanceEnquiry_20.png" />
+                            <asp:MenuItem NavigateUrl="Account/ChangePass.aspx" Text=" Change Password" ImageUrl="Icons/Password_20.jpg" />
+                            <asp:MenuItem NavigateUrl="Account/SuspendActivate.aspx" Text=" Suspend/Activate Card" ImageUrl="Icons/Suspend_20.png" />
                         </asp:MenuItem>
                         <asp:MenuItem Text="Voucher Management">
                             <asp:MenuItem NavigateUrl="Voucher/DepositVoucher.aspx" Text="Deposit Voucher"/>
                             <asp:MenuItem NavigateUrl="Voucher/IssueVoucher.aspx" Text="Issue Voucher"/>
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Transactions">
+                        <asp:MenuItem Text="Reports">
                             <asp:MenuItem NavigateUrl="Transactions/DisplayRecords.aspx" Text="Display Records"/>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Community">

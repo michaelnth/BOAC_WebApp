@@ -314,3 +314,31 @@ div.accountInfo
 {
     text-align: center;
 }
+
+/* Text Values 
+----------------------------------------------------------*/
+.readOnlyText
+{
+    color: Gray;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.editText
+{
+    text-align: left;
+    color: Black;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.successText
+{
+    color: Green;
+}
+
+.failureText
+{
+    color: Red;
+}

@@ -7,99 +7,99 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BOAC_WebApp1.Account {
+namespace BOAC_WebApp1.ReferralNoLogin {
     
     
-    public partial class AccountProfile {
+    public partial class ReferUserBusinessNL {
         
         /// <summary>
-        /// EditImageBtn control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton EditImageBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// FirstName control.
+        /// firstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FirstName;
+        protected global::System.Web.UI.WebControls.TextBox firstName;
         
         /// <summary>
-        /// LastName control.
+        /// lastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastName;
+        protected global::System.Web.UI.WebControls.TextBox lastName;
         
         /// <summary>
-        /// ContactPhoneNum control.
+        /// contactNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ContactPhoneNum;
+        protected global::System.Web.UI.WebControls.TextBox contactNo;
         
         /// <summary>
-        /// ContactEmail control.
+        /// emailAddr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ContactEmail;
+        protected global::System.Web.UI.WebControls.TextBox emailAddr;
         
         /// <summary>
-        /// CardId control.
+        /// cardId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CardId;
+        protected global::System.Web.UI.WebControls.TextBox cardId;
         
         /// <summary>
-        /// ReferralId control.
+        /// refFirstname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ReferralId;
+        protected global::System.Web.UI.WebControls.TextBox refFirstname;
         
         /// <summary>
-        /// SaveLabel control.
+        /// refContactPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SaveLabel;
+        protected global::System.Web.UI.WebControls.TextBox refContactPhone;
         
         /// <summary>
-        /// SaveBtn control.
+        /// contactEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveBtn;
+        protected global::System.Web.UI.WebControls.TextBox contactEmail;
         
         /// <summary>
-        /// CancelBtn control.
+        /// Submit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CancelBtn;
+        protected global::System.Web.UI.WebControls.Button Submit;
     }
 }

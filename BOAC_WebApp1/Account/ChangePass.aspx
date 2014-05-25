@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
+            <asp:Image ID="Icon" runat="server" ImageUrl="~/Icons/Password_20.jpg" />
             Change Your Password
         </h2>
     </div>
@@ -32,14 +33,16 @@
                             ValidationGroup="ChangePassValidationGroup">*</asp:RequiredFieldValidator>
                 </p>
                 <p>
-                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">New Password:</asp:Label>
+                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
                     <asp:TextBox ID="ConfirmPassword" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" ControlToValidate="ConfirmPassword" 
                             CssClass="failureNotification" ErrorMessage="Confirm Password is required." ToolTip="Confirm Password is required." 
                             ValidationGroup="ChangePassValidationGroup">*</asp:RequiredFieldValidator>
                 </p>
             </fieldset>
+            <asp:Label ID="StatusLabel" runat="server" Text=""></asp:Label>
             <p class="submitButton">
+                <asp:Button ID="ForgotPassword" runat="server" Text="Forgot Password" onclick="ForgotPassword_Click"/>
                 <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Change Password" 
                     ValidationGroup="ChangePassValidationGroup" onclick="ChangePassword_Click"/>
             </p>

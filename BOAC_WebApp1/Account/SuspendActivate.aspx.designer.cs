@@ -13,21 +13,30 @@ namespace BOAC_WebApp1.Account {
     public partial class SuspendActivate {
         
         /// <summary>
-        /// SuspendButton control.
+        /// State control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SuspendButton;
+        protected global::System.Web.UI.WebControls.Label State;
         
         /// <summary>
-        /// ActivateButton control.
+        /// SuspendImageBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ActivateButton;
+        protected global::System.Web.UI.WebControls.ImageButton SuspendImageBtn;
+        
+        /// <summary>
+        /// ActivateImageBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ActivateImageBtn;
     }
 }

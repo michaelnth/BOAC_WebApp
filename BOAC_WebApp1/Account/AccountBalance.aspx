@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
+            <asp:Image ID="Icon" runat="server" ImageUrl="~/Icons/BalanceEnquiry_20.png" />
             Account Balance
         </h2>
     </div>
@@ -11,11 +12,11 @@
     <br />
     <table style="width: 100%;">
         <tr>
-            <td style="width: 25%;">
+            <td style="width: 50%;">
                 First Name:
             </td>
             <td align="right">
-                <asp:TextBox ID="BusinessName" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="FirstName" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -23,7 +24,7 @@
                 Last Name:
             </td>
             <td align="right">
-                <asp:TextBox ID="ContactName" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="LastName" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -31,7 +32,7 @@
                 Card ID:
             </td>
             <td align="right">
-                <asp:TextBox ID="ContactPhoneNum" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="CardId" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -39,7 +40,7 @@
                 Email ID:
             </td>
             <td align="right">
-                <asp:TextBox ID="ContactEmail" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="EmailId" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -47,7 +48,7 @@
                 Current Account Balance:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox1" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="CurAccountBalance" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -55,7 +56,7 @@
                 Account Balance in Holding:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox2" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="HoldingBalance" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -63,7 +64,7 @@
                 Account Balance Blocked:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox3" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="BlockedBalance" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -71,7 +72,7 @@
                 YTD - Referral Count:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox4" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="YTDRefCount" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -79,7 +80,7 @@
                 TOT - Referral Count:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox5" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="TOTRefCount" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -87,7 +88,7 @@
                 YTD - Loyalty Reward Earned:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox6" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="YTDLoyaltyReward" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -95,7 +96,7 @@
                 TOT - Loyalty Reward Earned:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox7" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="TOTLoyaltyReward" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -103,7 +104,7 @@
                 TOT - Referral Reward Earned:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox8" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="TOTReferralReward" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -111,7 +112,7 @@
                 VCR - Number of Voucher Issued:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox9" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="VCRVoucherIssued" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -119,7 +120,7 @@
                 Account Status:
             </td>
             <td align="right">
-                <asp:TextBox ID="TextBox10" runat="server" CssClass="infoEntry"></asp:TextBox>
+                <asp:TextBox ID="AccountStatus" runat="server" CssClass="readOnlyText" ReadOnly="true"></asp:TextBox>
             </td>
         </tr>
     </table>

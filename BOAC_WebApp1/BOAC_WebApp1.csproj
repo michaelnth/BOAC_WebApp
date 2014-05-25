@@ -56,11 +56,20 @@
     <Content Include="Account\ChangePass.aspx" />
     <Content Include="Account\SuspendActivate.aspx" />
     <Content Include="Community\JoinDepart.aspx" />
+    <Content Include="Icons\Activate.png" />
+    <Content Include="Icons\BalanceEnquiry_20.png" />
+    <Content Include="Icons\Edit.png" />
+    <Content Include="Icons\Edit_20.png" />
+    <Content Include="Icons\Password_20.jpg" />
+    <Content Include="Icons\Suspend.png" />
+    <Content Include="Icons\Suspend_20.png" />
     <Content Include="Login\ChangePassword.aspx" />
     <Content Include="Login\ChangePasswordSuccess.aspx" />
-    <Content Include="Login\Login.aspx" />
     <Content Include="Login\Register.aspx" />
     <Content Include="InitialPage.aspx" />
+    <Content Include="ReferralNoLogin\ReferBusinessNL.aspx" />
+    <Content Include="ReferralNoLogin\ReferUserBusinessNL.aspx" />
+    <Content Include="ReferralNoLogin\ReferUserCommunityNL.aspx" />
     <Content Include="Referral\ReferBusiness.aspx" />
     <Content Include="Referral\ReferUserBusiness.aspx" />
     <Content Include="Referral\ReferUserCommunity.aspx" />
@@ -138,13 +147,6 @@
     <Compile Include="Login\ChangePasswordSuccess.aspx.designer.cs">
       <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,6 +172,27 @@
       <DependentUpon>InitialPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferralNoLogin\ReferBusinessNL.aspx.cs">
+      <DependentUpon>ReferBusinessNL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferralNoLogin\ReferBusinessNL.aspx.designer.cs">
+      <DependentUpon>ReferBusinessNL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralNoLogin\ReferUserBusinessNL.aspx.cs">
+      <DependentUpon>ReferUserBusinessNL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferralNoLogin\ReferUserBusinessNL.aspx.designer.cs">
+      <DependentUpon>ReferUserBusinessNL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralNoLogin\ReferUserCommunityNL.aspx.cs">
+      <DependentUpon>ReferUserCommunityNL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferralNoLogin\ReferUserCommunityNL.aspx.designer.cs">
+      <DependentUpon>ReferUserCommunityNL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Referral\ReferBusiness.aspx.cs">
       <DependentUpon>ReferBusiness.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

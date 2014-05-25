@@ -11,12 +11,21 @@ namespace BOAC_WebApp1.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            StatusLabel.Text = "";
         }
 
         protected void ChangePassword_Click(object sender, EventArgs e)
         {
+            // TODO: Make a call to the server to change the password...
+            StatusLabel.CssClass = "successText";
+            StatusLabel.Text = "Your password has been changed!";
+        }
 
+        protected void ForgotPassword_Click(object sender, EventArgs e)
+        {
+            // TODO: Make a call to the server to deal with forgotten password
+            StatusLabel.CssClass = "successText";
+            StatusLabel.Text = "A new password has been sent to your email.";
         }
     }
 }

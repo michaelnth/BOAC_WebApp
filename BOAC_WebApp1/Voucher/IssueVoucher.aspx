@@ -24,34 +24,56 @@
     <br />
     <table>
         <tr>
-            <th colspan="2" align="left">
-                Amount
-            </th>
-        </tr>
-        <tr><td colspan="2"><br /></td></tr>
-        <tr>
-            <td width= "250px">$0.01</td>
-            <td>
-                <asp:TextBox ID="centInput" runat="server" text="0" TextMode="Number" Style="text-align: right; width: 50px" />
+            <td width="50%">
+                <table>
+                    <tr>
+                        <th colspan="2" align="left">
+                            Amount
+                        </th>
+                    </tr>
+                    <tr><td colspan="2"><br /></td></tr>
+                    <tr>
+                        <td width= "250px">$0.01</td>
+                        <td>
+                            <asp:TextBox ID="centInput" runat="server" text="0" TextMode="Number" Style="text-align: right; width: 50px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$0.10</td>
+                        <td>
+                            <asp:TextBox ID="tenCentInput" runat="server" text="0" TextMode="Number" Style="text-align: right; width: 50px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$1.00</td>
+                        <td>
+                            <asp:TextBox ID="dollarInput" runat="server" text="0" TextMode="Number" Style="text-align: right; width: 50px" />
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr /></td></tr>
+                    <tr><td><br /></td></tr>
+                    <tr>
+                        <td>
+                            Total
+                        </td>
+                        <td align="right">
+                            $(total)
+                        </td>
+                    </tr>
+                    <tr><td><br /></td></tr>
+                    <tr>
+                        <td colspan="2" align="right">
+                            <asp:Button ID="IssueVoucherBtn" runat="server" Text="Issue Voucher" />
+                        </td>
+                    </tr>   
+                </table>
             </td>
-        </tr>
-        <tr>
-            <td>$0.10</td>
-            <td>
-                <asp:TextBox ID="tenCentInput" runat="server" text="0" TextMode="Number" Style="text-align: right; width: 50px" />
-            </td>
-        </tr>
-        <tr>
-            <td>$1.00</td>
-            <td>
-                <asp:TextBox ID="dollarInput" runat="server" text="0" TextMode="Number" Style="text-align: right; width: 50px" />
-            </td>
-        </tr>
-        <tr><td><br /></td></tr>
-        <tr>
-            <td colspan="2" align="right">
-                <asp:Button ID="IssueVoucherBtn" runat="server" Text="Issue Voucher" />
+            <td width="20%"></td>
+            <td width="30%">
+                
+                
             </td>
         </tr>
     </table>
+    
 </asp:Content>

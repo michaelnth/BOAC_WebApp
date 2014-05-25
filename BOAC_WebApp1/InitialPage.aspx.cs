@@ -11,12 +11,12 @@ namespace BOAC_WebApp1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            RegisterHyperLink.NavigateUrl = "Register.aspx?ReturnUrl=" + HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-            Server.Transfer("Default.aspx");
+            Server.Transfer("Account/AccountProfile.aspx");
         }
     }
 }

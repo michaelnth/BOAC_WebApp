@@ -21,12 +21,18 @@
                     </td>
                 </tr>
                 <tr><td><br /></td></tr>
-                <tr><td><br /></td></tr>
                 <tr>
                     <td colspan="2" align="right">
-                        <asp:Button ID="DepositVoucherBtn" runat="server" Text="Deposit Voucher" />
+                        <asp:ImageButton ID="DepositImageBtn" runat="server" 
+                            onclick="DepositImageBtn_Click" ToolTip="Deposit" ImageUrl="~/Icons/Deposit.png" Height="30px" />
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <asp:Label ID="DepositStatus" runat="server" Text=""></asp:Label>
+                    </td>
+                </tr>
+                
             </table>
         </fieldset>
     </div>

@@ -13,49 +13,13 @@ namespace BOAC_WebApp1.Referral {
     public partial class ReferUserBusiness {
         
         /// <summary>
-        /// firstName control.
+        /// ReferBusinessIcon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox firstName;
-        
-        /// <summary>
-        /// lastName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lastName;
-        
-        /// <summary>
-        /// contactNo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contactNo;
-        
-        /// <summary>
-        /// emailAddr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailAddr;
-        
-        /// <summary>
-        /// cardId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cardId;
+        protected global::System.Web.UI.WebControls.Image ReferBusinessIcon;
         
         /// <summary>
         /// refFirstname control.
@@ -83,6 +47,15 @@ namespace BOAC_WebApp1.Referral {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox contactEmail;
+        
+        /// <summary>
+        /// SubmitStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SubmitStatus;
         
         /// <summary>
         /// Submit control.

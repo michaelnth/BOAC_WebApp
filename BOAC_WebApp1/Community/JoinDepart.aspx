@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
+            <asp:Image ID="CommIcon" runat="server" Height="20px" 
+                ImageUrl="~/Icons/Community.png" />
             Join/Depart a Community
         </h2>
     </div>

@@ -13,48 +13,66 @@ namespace BOAC_WebApp1.Voucher {
     public partial class IssueVoucher {
         
         /// <summary>
-        /// balanceValue control.
+        /// BalanceValue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox balanceValue;
+        protected global::System.Web.UI.WebControls.TextBox BalanceValue;
         
         /// <summary>
-        /// centInput control.
+        /// CentInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox centInput;
+        protected global::System.Web.UI.WebControls.TextBox CentInput;
         
         /// <summary>
-        /// tenCentInput control.
+        /// TenCentInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tenCentInput;
+        protected global::System.Web.UI.WebControls.TextBox TenCentInput;
         
         /// <summary>
-        /// dollarInput control.
+        /// DollarInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dollarInput;
+        protected global::System.Web.UI.WebControls.TextBox DollarInput;
         
         /// <summary>
-        /// IssueVoucherBtn control.
+        /// TotalAmt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button IssueVoucherBtn;
+        protected global::System.Web.UI.WebControls.Label TotalAmt;
+        
+        /// <summary>
+        /// IssueImageBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton IssueImageBtn;
+        
+        /// <summary>
+        /// IssueStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label IssueStatus;
     }
 }

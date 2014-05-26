@@ -27,19 +27,19 @@
                             <asp:MenuItem NavigateUrl="Account/SuspendActivate.aspx" Text=" Suspend/Activate Card" ImageUrl="Icons/Suspend_20.png" />
                         </asp:MenuItem>
                         <asp:MenuItem Text="Voucher Management">
-                            <asp:MenuItem NavigateUrl="Voucher/DepositVoucher.aspx" Text="Deposit Voucher"/>
-                            <asp:MenuItem NavigateUrl="Voucher/IssueVoucher.aspx" Text="Issue Voucher"/>
+                            <asp:MenuItem NavigateUrl="Voucher/DepositVoucher.aspx" Text=" Deposit Voucher" ImageUrl="Icons/Deposit_20.png" />
+                            <asp:MenuItem NavigateUrl="Voucher/IssueVoucher.aspx" Text=" Issue Voucher" ImageUrl="Icons/IssueVoucher_20.png" />
                         </asp:MenuItem>
                         <asp:MenuItem Text="Reports">
-                            <asp:MenuItem NavigateUrl="Transactions/DisplayRecords.aspx" Text="Display Records"/>
+                            <asp:MenuItem NavigateUrl="Transactions/DisplayRecords.aspx" Text=" Display Records" ImageUrl="Icons/DisplayRecord_20.jpg" />
                         </asp:MenuItem>
                         <asp:MenuItem Text="Community">
-                            <asp:MenuItem NavigateUrl="Community/JoinDepart.aspx" Text="Join/Depart Community"/>
+                            <asp:MenuItem NavigateUrl="Community/JoinDepart.aspx" Text=" Join/Depart Community" ImageUrl="Icons/Community_20.png" />
                         </asp:MenuItem>
                         <asp:MenuItem Text="Referral">
-                            <asp:MenuItem NavigateUrl="Referral/ReferUserCommunity.aspx" Text="Refer a User to a Community"/>
-                            <asp:MenuItem NavigateUrl="Referral/ReferUserBusiness.aspx" Text="Refer a User to a Business"/>
-                            <asp:MenuItem NavigateUrl="Referral/ReferBusiness.aspx" Text="Recommend a Business"/>
+                            <asp:MenuItem NavigateUrl="Referral/ReferUserCommunity.aspx" Text=" Refer a User to a Community" ImageUrl="Icons/Refer_20.png" />
+                            <asp:MenuItem NavigateUrl="Referral/ReferUserBusiness.aspx" Text=" Refer a User to a Business" ImageUrl="Icons/Refer_20.png" />
+                            <asp:MenuItem NavigateUrl="Referral/ReferBusiness.aspx" Text=" Recommend a Business" ImageUrl="Icons/RecommendBusiness_20.png" />
                         </asp:MenuItem>
                     </Items>
                 </asp:Menu>

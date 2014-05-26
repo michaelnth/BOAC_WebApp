@@ -22,12 +22,21 @@ namespace BOAC_WebApp1.Voucher {
         protected global::System.Web.UI.WebControls.TextBox VoucherID;
         
         /// <summary>
-        /// DepositVoucherBtn control.
+        /// DepositImageBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DepositVoucherBtn;
+        protected global::System.Web.UI.WebControls.ImageButton DepositImageBtn;
+        
+        /// <summary>
+        /// DepositStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DepositStatus;
     }
 }

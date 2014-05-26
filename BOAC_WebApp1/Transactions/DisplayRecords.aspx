@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
+            <asp:Image ID="recordIcon" runat="server" Height="20px" ImageUrl="~/Icons/DisplayRecord.jpg" />
             Display Transaction Records
         </h2>
     </div>

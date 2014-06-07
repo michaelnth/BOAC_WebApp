@@ -22,31 +22,49 @@ namespace BOAC_WebApp1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// RefBusinessLink control.
+        /// ExitBtn1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RefBusinessLink;
+        protected global::System.Web.UI.WebControls.ImageButton ExitBtn1;
         
         /// <summary>
-        /// RefCommunityLink control.
+        /// RecommendBusinessBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RefCommunityLink;
+        protected global::System.Web.UI.WebControls.ImageButton RecommendBusinessBtn;
         
         /// <summary>
-        /// RecBusinessLink control.
+        /// ReferFriendBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RecBusinessLink;
+        protected global::System.Web.UI.WebControls.ImageButton ReferFriendBtn;
+        
+        /// <summary>
+        /// CreateAccountBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton CreateAccountBtn;
+        
+        /// <summary>
+        /// MailBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton MailBtn;
         
         /// <summary>
         /// RegisterHyperLink control.

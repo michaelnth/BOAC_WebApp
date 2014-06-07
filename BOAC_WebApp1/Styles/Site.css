@@ -1,6 +1,17 @@
 ﻿/* DEFAULTS
 ----------------------------------------------------------*/
 
+*
+{
+    margin: 0;
+    padding: 0px;
+}
+
+html
+{
+    height: 100%;
+}
+
 body   
 {
     background: #b6b7bc;
@@ -9,6 +20,19 @@ body
     margin: 0px;
     padding: 0px;
     color: #696969;
+    height: 100%;
+}
+
+form
+{
+    height: 100%;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 a:link, a:visited
@@ -77,37 +101,55 @@ h5, h6
 
 /* this rule styles <h1> and <h2> tags that are the 
 first child of the left and right table columns */
-.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+.rightColumn > h1, .rightColumn > h2, .leftC 
 {
     margin-top: 0px;
 }
 
 
-/* PRIMARY LAYOUT ELEMENTS   
+/* PAGE LAYOUTS  
 ----------------------------------------------------------*/
 
-.page
+/*.page
 {
     width: 960px;
     background-color: #fff;
     margin: 20px auto 0px auto;
     border: 1px solid #496077;
+}*/
+
+.masterPage
+{
+    background-position: center center;
+    margin: 0px 0px 0px 0px;
+    background-image: url('../Icons/Original/Background.png');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    height: 100%;
 }
 
 .initPage
 {
-    width: 90%;
+    background-position: center center;
+    margin: 0px 0px 0px 0px;
+    background-image: url('../Icons/Original/Init_Background.png');
+    background-repeat: no-repeat;
     background-color: #fff;
-    margin: 20px auto 0px auto;
-    border: 1px solid #496077;
+    background-size: cover;
+    height: 100%;
 }
+
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
 
 .header
 {
     position: relative;
     margin: 0px;
-    padding: 0px;
-    background: #4b6c9e;
+    /*background: #4b6c9e;*/
     width: 100%;
 }
 
@@ -116,17 +158,47 @@ first child of the left and right table columns */
     font-weight: 700;
     margin: 0px;
     padding: 0px 0px 0px 20px;
-    color: #f9f9f9;
+    color: Orange; /*#f9f9f9;*/
     border: none;
     line-height: 2em;
-    font-size: 2em;
+    font-size: 2.5em;
+}
+
+
+.masterWrapper 
+{
+    /*
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -10em;*/
+}
+
+.wrapper 
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40em;
 }
 
 .main
 {
-    padding: 0px 12px;
-    margin: 12px 8px 8px 8px;
-    min-height: 420px;
+    padding: 0px 2px;
+    margin: 0px 8px 0px 8px;
+    height: 100%;
+}
+
+.masterFooter, .masterPush
+{
+    height: 10em;
+    /*
+    height: 10em;*/
+}
+
+.footer, .push
+{
+    height: 40em;
 }
 
 .leftCol
@@ -136,14 +208,116 @@ first child of the left and right table columns */
     width: 200px;
     min-height: 200px;
 }
-
+/*
 .footer
 {
     color: #4e5766;
-    padding: 8px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     margin: 0px auto;
     text-align: center;
     line-height: normal;
+}*/
+
+
+/* FOOTER MENU 
+----------------------------------------------------------*/
+div.loginContainer
+{
+    float: left;
+    width: 50%;
+}
+
+.loginContainer h1
+{
+    font-weight: 700;
+    margin: 0px;
+    color: Black; /*#f9f9f9;*/
+    border: none;
+    font-size: 1.5em;
+}
+
+.loginContainer input
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+div.initIconContainer
+{
+    width: 50%;
+    margin: 13em 0em 0em 10em;
+    float: left;
+}
+
+div.masterIconContainer
+{
+    margin: 1em 1em 0em 1em;
+    float: left;
+}
+
+div.exitContainer
+{
+    margin: 20em 5em 0em 0em;
+    width: 10em;
+    float: left;
+}
+
+div.masterExitContainer
+{
+    margin: 0em 5em 0em 5em;
+    width: 10em;
+    float: left;
+}
+
+div.mailContainer
+{
+    margin: 13em 5em 0em 0em;
+    width: 10em;
+    float: left;
+}
+
+div.iconContainer
+{
+    margin: 0px 2px 0px 0px;
+    padding: 5px 5px 0px 5px;
+    background-color: White;
+    float: left;
+}
+
+div.leftPanel
+{
+    float: left;
+    width: 10em;
+    height: 100%;
+}
+
+div.mainContainer
+{
+    float: left;
+    padding-left: 10em;
+}
+
+/* TABLE FORMAT
+----------------------------------------------------------*/
+tr.firstRow
+{
+    background-color: #00CCFF;
+}
+
+td
+{
+    padding: 2px 14px 2px 10px;
+}
+
+tr.evenRow
+{
+    background-color: #CCFFFF;
+}
+
+tr.oddRow
+{
+    background-color: White;
 }
 
 

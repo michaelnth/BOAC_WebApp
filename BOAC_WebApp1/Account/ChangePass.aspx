@@ -1,10 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ChangePass.aspx.cs" Inherits="BOAC_WebApp1.Account.ChangePass" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelContent" runat="server">
+    <div align="center" class="leftColContent">
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/Icons/Original/Password.png" Height="80px" />
+    </div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
-            <asp:Image ID="Icon" runat="server" ImageUrl="~/Icons/Password_20.jpg" />
             Change Your Password
         </h2>
     </div>

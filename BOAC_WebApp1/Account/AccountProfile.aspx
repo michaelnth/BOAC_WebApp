@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AccountProfile.aspx.cs" Inherits="BOAC_WebApp1.Account.AccountProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelContent" runat="server">
+    <div align="center" class="leftColContent">
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/Icons/Original/Edit.png" Height="80px" />
+    </div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
@@ -13,7 +19,7 @@
         <tr>
             <td colspan="2" align="right">
                 <asp:ImageButton ID="EditImageBtn" runat="server" 
-                    onclick="EditImageBtn_Click" Height="20px" ImageUrl="~/Icons/Edit.png" />
+                    onclick="EditImageBtn_Click" Height="20px" ImageUrl="~/Icons/Original/Edit.png" />
             </td>
         </tr>
         <tr>

@@ -15,11 +15,11 @@ html
 body   
 {
     background: #b6b7bc;
-    font-size: .80em;
+    font-size: 1em;
     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
-    color: #696969;
+    color: Black;
     height: 100%;
 }
 
@@ -64,7 +64,7 @@ p
 h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
-    color: #666666;
+    color: Black;
     font-variant: small-caps;
     text-transform: none;
     font-weight: 200;
@@ -81,7 +81,7 @@ h1
 h2
 {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3
@@ -109,14 +109,6 @@ first child of the left and right table columns */
 
 /* PAGE LAYOUTS  
 ----------------------------------------------------------*/
-
-/*.page
-{
-    width: 960px;
-    background-color: #fff;
-    margin: 20px auto 0px auto;
-    border: 1px solid #496077;
-}*/
 
 .masterPage
 {
@@ -151,6 +143,7 @@ first child of the left and right table columns */
     margin: 0px;
     /*background: #4b6c9e;*/
     width: 100%;
+    height: auto;
 }
 
 .header h1
@@ -164,62 +157,26 @@ first child of the left and right table columns */
     font-size: 2.5em;
 }
 
-
-.masterWrapper 
+.iconMenu
 {
-    /*
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -10em;*/
-}
-
-.wrapper 
-{
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -40em;
+    height: 10em;
+    padding-left: 10px;
 }
 
 .main
 {
     padding: 0px 2px;
     margin: 0px 8px 0px 8px;
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 
-.masterFooter, .masterPush
+div.leftColContent
 {
-    height: 10em;
-    /*
-    height: 10em;*/
+    padding: 100% 0px;
 }
 
-.footer, .push
-{
-    height: 40em;
-}
-
-.leftCol
-{
-    padding: 6px 0px;
-    margin: 12px 8px 8px 8px;
-    width: 200px;
-    min-height: 200px;
-}
-/*
-.footer
-{
-    color: #4e5766;
-    padding: 0px 0px 0px 0px;
-    margin: 0px auto;
-    text-align: center;
-    line-height: normal;
-}*/
-
-
-/* FOOTER MENU 
+/* CONTAINERS
 ----------------------------------------------------------*/
 div.loginContainer
 {
@@ -295,7 +252,7 @@ div.leftPanel
 div.mainContainer
 {
     float: left;
-    padding-left: 10em;
+    width: 50%;
 }
 
 /* TABLE FORMAT
@@ -318,55 +275,6 @@ tr.evenRow
 tr.oddRow
 {
     background-color: White;
-}
-
-
-/* TAB MENU   
-----------------------------------------------------------*/
-
-div.hideSkiplink
-{
-    background-color:#3a4f63;
-    width:100%;
-}
-
-div.menu
-{
-    padding: 4px 0px 4px 8px;
-}
-
-div.menu ul
-{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    width: auto;
-}
-
-div.menu ul li a, div.menu ul li a:visited
-{
-    background-color: #465c71;
-    border: 1px #4e667d solid;
-    color: #dde4ec;
-    display: block;
-    line-height: 1.35em;
-    padding: 4px 20px;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-div.menu ul li a:hover
-{
-    background-color: #bfcbd6;
-    color: #465c71;
-    text-decoration: none;
-}
-
-div.menu ul li a:active
-{
-    background-color: #465c71;
-    color: #cfdbe6;
-    text-decoration: none;
 }
 
 /* FORM ELEMENTS   

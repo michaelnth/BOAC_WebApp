@@ -10,50 +10,80 @@
 </head>
 <body class="masterPage">
     <form runat="server">
-        <div class="header">
-            <div class="title">
-                <h1>
-                    Business On A Cloud Reward and Referral Program
-                </h1>
+        <div   class="header">
+            <div class="leftPanel">
+                <div style="padding: 10px">
+                    <asp:Image ID="BoaC" runat="server" ImageUrl="~/Icons/Original/BoaC.png" Height="80px" />
+                </div>
             </div>
-            <div class="clear"></div>
-            <div class="masterFooter">
-                <div class="masterIconContainer">
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="RecommendBusinessBtn" runat="server" ImageUrl="~/Icons/Original/RecommendBusiness.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="ReferFriendBtn" runat="server" ImageUrl="~/Icons/Original/Refer.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="CreateAccoutBtn" runat="server" ImageUrl="~/Icons/Original/CreateAccount.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="ReportBtn" runat="server" ImageUrl="~/Icons/Original/DisplayRecord.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="PasswordBtn" runat="server" ImageUrl="~/Icons/Original/Password.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="EditBtn" runat="server" ImageUrl="~/Icons/Original/Edit.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="IssueVoucherBtn" runat="server" ImageUrl="~/Icons/Original/Gift_Voucher.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="DepositVoucherBtn" runat="server" ImageUrl="~/Icons/Original/Deposit.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="ReactivateBtn" runat="server" ImageUrl="~/Icons/Original/Activate.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="SuspendBtn" runat="server" ImageUrl="~/Icons/Original/Suspend.png" Height="50px" />
-                    </div>
-                    <div class="iconContainer">
-                        <asp:ImageButton ID="ActBalanceBtn" runat="server" ImageUrl="~/Icons/Original/BalanceEnquiry.png" Height="50px" />
+            <div style="float: left;">
+                <div class="title">
+                    <h1>
+                        Business On A Cloud Reward and Referral Program
+                    </h1>
+                </div>
+                <div class="clear"></div>
+                <div class="iconMenu">
+                    <div class="masterIconContainer">
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="ActBalanceBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/BalanceEnquiry.png" Height="50px" 
+                                onclick="ActBalanceBtn_Click" ToolTip="Account Balance" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="SuspendBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Suspend.png" Height="50px" 
+                                onclick="SuspendBtn_Click" ToolTip="Suspend Card" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="ReactivateBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Activate.png" Height="50px" 
+                                onclick="ReactivateBtn_Click" ToolTip="Reactivate Card" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="DepositVoucherBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Deposit.png" Height="50px" 
+                                onclick="DepositVoucherBtn_Click" ToolTip="Deposit Voucher" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="IssueVoucherBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Gift_Voucher.png" Height="50px" 
+                                onclick="IssueVoucherBtn_Click" ToolTip="Issue Voucher" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="EditBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Edit.png" Height="50px" onclick="EditBtn_Click" 
+                                ToolTip="Edit Profile" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="PasswordBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Password.png" Height="50px" 
+                                onclick="PasswordBtn_Click" ToolTip="Change Password" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="ReportBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/DisplayRecord.png" Height="50px" 
+                                onclick="ReportBtn_Click" ToolTip="Display Transactions" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="CreateAccoutBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/CreateAccount.png" Height="50px" 
+                                onclick="CreateAccoutBtn_Click" ToolTip="Create Account" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="ReferFriendBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/Refer.png" Height="50px" 
+                                onclick="ReferFriendBtn_Click" ToolTip="Refer a Friend to an Entity" />
+                        </div>
+                        <div class="iconContainer">
+                            <asp:ImageButton ID="RecommendBusinessBtn" runat="server" 
+                                ImageUrl="~/Icons/Original/RecommendBusiness.png" Height="50px" 
+                                onclick="RecommendBusinessBtn_Click" ToolTip="Recommend a Business" />
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="clear"></div>
             <!--
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
@@ -84,6 +114,9 @@
             </div> -->
         </div>
         <div class="main">
+            <div class="leftPanel">
+                <asp:ContentPlaceHolder ID="LeftPanelContent" runat="server"/>
+            </div>
             <div class="mainContainer">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
             </div>

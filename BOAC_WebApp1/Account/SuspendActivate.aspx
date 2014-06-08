@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SuspendActivate.aspx.cs" Inherits="BOAC_WebApp1.Account.SuspendActivate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelContent" runat="server">
+    <div align="center" class="leftColContent">
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/Icons/Original/Suspend.png" Height="80px" />
+    </div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
@@ -29,7 +35,7 @@
         <div align="right">
             <asp:ImageButton ID="SuspendImageBtn" runat="server" 
                 onclick="SuspendImageBtn_Click" Height="30px" 
-                ImageUrl="~/Icons/Suspend.png" ToolTip="Suspend" />
+                ImageUrl="~/Icons/Original/Suspend.png" ToolTip="Suspend" />
         </div>
     </fieldset>
     <fieldset>
@@ -40,7 +46,7 @@
         <div align="right">
             <asp:ImageButton ID="ActivateImageBtn" runat="server" 
                 onclick="ActivateImageBtn_Click" Height="30px" 
-                ImageUrl="~/Icons/Activate.png" ToolTip="Activate" />
+                ImageUrl="~/Icons/Original/Activate.png" ToolTip="Activate" />
         </div>
     </fieldset>
 </asp:Content>

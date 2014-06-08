@@ -1,11 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReferBusiness.aspx.cs" Inherits="BOAC_WebApp1.Referral.ReferBusiness" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelContent" runat="server">
+    <div align="center" class="leftColContent">
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/Icons/Original/RecommendBusiness.png" Height="80px" />
+    </div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
-            <asp:Image ID="RecommendIcon" runat="server" Height="20px" 
-                ImageUrl="~/Icons/RecommendBusiness.png" />
             Recommend a New Business
         </h2>
     </div>

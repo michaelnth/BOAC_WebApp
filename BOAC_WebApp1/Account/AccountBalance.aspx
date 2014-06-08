@@ -1,10 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AccountBalance.aspx.cs" Inherits="BOAC_WebApp1.Account.AccountBalance" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelContent" runat="server">
+    <div align="center" class="leftColContent">
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/Icons/Original/BalanceEnquiry.png" Height="80px" />
+    </div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2>
-            <asp:Image ID="Icon" runat="server" ImageUrl="~/Icons/BalanceEnquiry_20.png" />
             Account Balance
         </h2>
     </div>
